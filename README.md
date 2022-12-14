@@ -39,7 +39,7 @@ There are 5 code files in `code_files` folder:
 - Run: `g++ main.cpp dirac.cpp _2opt.cpp weave.cpp naive_greedy.cpp -o main.out`. Alternatively, an executable `ch` can be run (`./ch`).
 
 ### Data
-The `TSP_data_files` folder provides graph input files used for experiments performed in the paper and are derived from the TSPLIB library.
+The `TSP_data_files` folder provides graph input files used for experiments performed in the paper and are derived from the [TSPLIB library](http://www.cs.cmu.edu/Groups/AI/areas/genetic/ga/test/tsp/0.html).
 
 ## Requirements
 * C++11
