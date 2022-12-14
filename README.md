@@ -1,5 +1,4 @@
-# maximum-scatter-TSP
-Six heuristics and their smoothed analysis for NP-hard Maximum Scatter Traveling Salesman Problem (MSTSP)
+# Six heuristics and their smoothed analysis for NP-hard Maximum Scatter Traveling Salesman Problem (MSTSP)
 
 In this work, we describe six algorithms for MSTSP with improved formulations of prior work that enhance their real-world efficacy. Further, we perform experimental studies motivated by smoothed analysis to comprehensively evaluate these algorithms in terms of run-time, quality and stability. This work, done under the guidance of [Prof. Raghavendra Rao](http://www.cse.iitm.ac.in/profile.php?arg=MTU=), was published as paper (lead author) at [SIAM-ALENEX22](https://www.siam.org/conferences/cm/conference/alenex22).
 
@@ -26,7 +25,21 @@ Our benchmarking experiments can be broadly split into three categories:
 4. We use a real-world dataset augmented using five graph perturbations and evaluated with three edge cost metrics to perform a comprehensive perturbation analysis of the algorithms and compare results on three critical performance measures, namely, the quality, runtime and stability of the algorithms.
 
 ## Using the code
-A single directory contains code of 6 different algorithms and another data. It can be easily ported to run with public-cloud like GCP, AWS, etc.
+
+There are 5 code files in `code_files` folder:
+- `main.cpp`: Main file to run
+- `naive_greedy.cpp`: Contains code for naive greedy algorithm
+- `weave.cpp`: Contains code for naive and Hoffmann weave algorithms
+- `dirac.cpp`: Contains code for Dirac algorithm
+- `_2opt.cpp`: Contains code for pure 2-opt and randomized 2-opt algorithms
+
+**To run the code**
+- Place the `TSP_data_files` folder inside the `code_files` folder
+- cd to the `code_files` folder
+- Run: `g++ main.cpp dirac.cpp _2opt.cpp weave.cpp naive_greedy.cpp -o main.out`. Alternatively, the executable `ch` can be run (`./ch`).
+
+### Data
+The `TSP_data_files` folder provides graph input files used for experiments performed in the paper and are derived from the TSPLIB library.
 
 ## Requirements
 * C++11
