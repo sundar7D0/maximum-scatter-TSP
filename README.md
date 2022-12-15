@@ -1,6 +1,6 @@
 # Six heuristics and their smoothed analysis for NP-hard Maximum Scatter Traveling Salesman Problem (MSTSP)
 
-In this work, we describe six algorithms for MSTSP with improved formulations of prior work that enhance their real-world efficacy. Further, we perform experimental studies motivated by smoothed analysis to comprehensively evaluate these algorithms in terms of run-time, quality and stability. This work, done under the guidance of [Prof. Raghavendra Rao](http://www.cse.iitm.ac.in/profile.php?arg=MTU=), was published as paper (lead author) at [SIAM-ALENEX22](https://www.siam.org/conferences/cm/conference/alenex22).
+In this work, we describe six algorithms for MSTSP with improved formulations of prior work that enhance their **real-world efficacy**. Further, we perform experimental studies motivated by **[smoothed analysis](https://en.wikipedia.org/wiki/Smoothed_analysis)** to comprehensively evaluate these algorithms in terms of run-time, quality and stability. This work, done under the guidance of [Prof. Raghavendra Rao](http://www.cse.iitm.ac.in/profile.php?arg=MTU=), was published as paper (lead author) at [SIAM-ALENEX22](https://www.siam.org/conferences/cm/conference/alenex22).
 
 The six algorithms that we describe in this work are:
 
@@ -19,10 +19,10 @@ Our benchmarking experiments can be broadly split into three categories:
 
 ## Key Contributions:
 
-1. We observe that the Naive Greedy algorithm is very fast and easy-to-implement baseline for MSTSP.
-2. We present the Naive Weave and Hoffmann Weave algorithms which introduce an improved formulation of the work by Arkin and Hoffmann to extend their usability to non-regular grids.
-3. We introduce Pure 2-opt and Randomised 2-opt as very close approximation algorithms for the MSTSP.
-4. We used a real-world dataset augmented using five graph perturbations and evaluated with three edge cost metrics to perform a comprehensive perturbation analysis of the algorithms and compare results on three critical performance measures, namely, the quality, runtime and stability of the algorithms.
+1. We observe that the Naive Greedy algorithm is **very fast** and **easy-to-implement** baseline for MSTSP.
+2. We present the Naive Weave and Hoffmann Weave algorithms which introduce an improved formulation of the work by Arkin and Hoffmann to extend their usability to **non-regular grids**.
+3. We introduce Pure 2-opt and Randomised 2-opt as **very close approximation** algorithms for the MSTSP.
+4. We used a real-world dataset augmented using five graph perturbations and evaluated with **three edge cost metrics** to perform a comprehensive perturbation analysis of the algorithms and compare results on three critical performance measures, namely, the quality, runtime and stability of the algorithms.
 
 ## Using the code
 
